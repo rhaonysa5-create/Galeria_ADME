@@ -1,0 +1,35 @@
+[
+  {
+    "id": "santa-ceia-2026",
+    "nome": "Santa Ceia",
+    "descricao": "Registro fotográfico do culto de Santa Ceia.",
+    "data": "2026-09-27",
+    "categoria": "Culto",
+    "tags": [
+      "santa ceia",
+      "culto",
+      "comunhão"
+    ],
+    "capa": "fotos/Santa-Ceia-2026/001.jpg",
+    "fotos": [
+      "fotos/Santa-Ceia-2026/001.jpg",
+      "fotos/Santa-Ceia-2026/002.jpg"
+    ]
+  },
+  {
+    "id": "culto-celebracao-2026-10-04",
+    "nome": "Culto de Celebração",
+    "descricao": "Registro fotográfico do culto de celebração.",
+    "data": "2026-10-04",
+    "categoria": "Culto",
+    "tags": [
+      "culto",
+      "celebração"
+    ],
+    "capa": "fotos/Culto-de-Celebracao-2026-10-04/001.jpg",
+    "fotos": [
+      "fotos/Culto-de-Celebracao-2026-10-04/001.jpg",
+      "fotos/Culto-de-Celebracao-2026-10-04/002.jpg"
+    ]
+  }
+]
