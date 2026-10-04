@@ -1,0 +1,52 @@
+GALERIA - ASSEMBLEIA DE DEUS MINISTÉRIO DO ÉDEN
+
+1. Coloque a logo da igreja na raiz do projeto com o nome:
+   logo.png
+
+2. Os álbuns ficam em:
+   fotos/NOME-DO-ALBUM/
+
+3. Edite:
+   dados/albuns.json
+
+4. Para cada álbum informe:
+   - nome
+   - descricao
+   - data no formato YYYY-MM-DD
+   - categoria
+   - tags
+   - capa
+   - lista de fotos
+
+5. A página ordena por data automaticamente, com os álbuns mais recentes primeiro.
+
+6. Filtros disponíveis:
+   - pesquisa por texto
+   - mais recentes
+   - mais antigos
+   - nome A-Z
+   - nome Z-A
+   - mais fotos
+   - menos fotos
+   - este ano
+   - este mês
+   - últimos 7 dias
+
+7. Há dois modos de visualização:
+   - grade
+   - compacta
+
+8. O visitante pode alternar entre modo claro e escuro. A preferência fica salva no navegador.
+
+IMPORTANTE:
+Não abra o index.html diretamente com duplo clique em alguns navegadores, pois fetch() pode ser bloqueado por segurança.
+
+Use um servidor HTTP.
+
+Com Python instalado:
+    python -m http.server 8000
+
+Depois acesse:
+    http://localhost:8000
+
+Em hospedagem comum (Apache/Nginx/GitHub Pages), basta enviar os arquivos normalmente.

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Galeria | Assembleia de Deus Ministério do Éden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#">
+      <img src="logo.png" alt="Logo da Assembleia de Deus Ministério do Éden" onerror="this.style.display='none'">
+      <span class="brand-text"><strong>Assembleia de Deus</strong><small>Ministério do Éden</small></span>
+    </a>
+    <nav>
+      <a href="#albuns" class="nav-link active">Galeria</a>
+      <button id="themeToggle" class="icon-button" aria-label="Alternar tema" title="Alternar tema">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">MEMÓRIAS • COMUNHÃO • FÉ</span>
+      <h1>Momentos que<br><em>ficam para sempre.</em></h1>
+      <p>Registros dos cultos, eventos e momentos especiais da Assembleia de Deus Ministério do Éden.</p>
+      <a href="#albuns" class="hero-button">Explorar galeria <span>↓</span></a>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <section id="albuns" class="gallery-section">
+    <div class="section-heading">
+      <div>
+        <span class="section-kicker">GALERIA</span>
+        <h2>Álbuns da igreja</h2>
+        <p id="resultCount">Carregando...</p>
+      </div>
+      <div class="view-controls">
+        <button id="gridView" class="view-button active" title="Visualização em grade">▦</button>
+        <button id="compactView" class="view-button" title="Visualização compacta">☷</button>
+      </div>
+    </div>
+
+    <div class="filters">
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Pesquisar por nome, descrição ou data..." autocomplete="off">
+      </label>
+
+      <select id="sort">
+        <option value="newest">Mais recentes</option>
+        <option value="oldest">Mais antigos</option>
+        <option value="az">Nome: A → Z</option>
+        <option value="za">Nome: Z → A</option>
+        <option value="photos-desc">Mais fotos</option>
+        <option value="photos-asc">Menos fotos</option>
+      </select>
+
+      <select id="period">
+        <option value="all">Todos os períodos</option>
+        <option value="year">Este ano</option>
+        <option value="month">Este mês</option>
+        <option value="week">Últimos 7 dias</option>
+      </select>
+
+      <button id="clearFilters" class="clear-button">Limpar filtros</button>
+    </div>
+
+    <div id="albums" class="albums"></div>
+
+    <div id="empty" class="empty hidden">
+      <div class="empty-icon">⌕</div>
+      <h3>Nenhum álbum encontrado</h3>
+      <p>Tente alterar a pesquisa ou os filtros.</p>
+    </div>
+
+    <div id="loading" class="loading">Carregando galeria...</div>
+  </section>
+</main>
+
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+  <button id="closeLightbox" class="lightbox-close" aria-label="Fechar">×</button>
+  <button id="previous" class="lightbox-nav previous" aria-label="Foto anterior">‹</button>
+  <div class="lightbox-content">
+    <img id="lightboxImage" src="" alt="">
+    <div class="lightbox-meta">
+      <div>
+        <strong id="lightboxTitle"></strong>
+        <span id="photoCounter"></span>
+      </div>
+      <button id="downloadPhoto" class="download-button">Abrir foto</button>
+    </div>
+  </div>
+  <button id="next" class="lightbox-nav next" aria-label="Próxima foto">›</button>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">AD</div>
+      <div><strong>Assembleia de Deus</strong><span>Ministério do Éden</span></div>
+    </div>
+    <span>© <span id="year"></span> Assembleia de Deus Ministério do Éden</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
